@@ -13,8 +13,19 @@ public class FoodyRestConstants {
 	public static final String ADMIN_LOGIN_SUCCESS = "Admin Login Success";
 	public static final String ADMIN_LOGIN_FAILURE = "Admin Login Failure";
 	
-	public static final String ERR_CODE_NO_USER_PWD_PIN = "20.1";
+	public static final String ERR_CODE_NO_USER_PWD_PIN = "21";
 	public static final String ERR_MSSG_NO_USER_PWD_PIN = "No Username/Password/Pin is entered in page.";
-	public static final String ERR_CODE_INVALID_USER = "20.2";
+	public static final String ERR_CODE_INVALID_USER = "22";
 	public static final String ERR_MSSG_INVALID_USER = "Invalid Username/Password/Pin is entered.";
+	
+	//Restaurant Service
+	public static final String STATUS_CODE_CREATE_RESTAURANT_LOGIN = "30";
+	public static final String STATUS_MSSG_CREATE_RESTAURANT_LOGIN = "New Restaurant Login is created successfully";
+	
+	public static final String ERR_CODE_INVALID_EMAILID_PWD = "31";
+	public static final String ERR_MSSG_INVALID_EMAILID_PWD = "Invalid EmailID/Password is entered.";
+	
+	public static final String ERR_CODE_RESTAURANT_ALREADY_PRESENT = "32";
+	public static final String ERR_MSSG_RESTAURANT_ALREADY_PRESENT = "Already given Email ID is registered for another restaurant";
+	
 }

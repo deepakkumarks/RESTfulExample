@@ -1,21 +1,24 @@
 package com.foody.rest.dto;
 
-public class AdminUser extends DataTransferStatusBean {
-	String userName;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class User extends DataTransferStatusBean {
+	String username;
 	String password;
 	String pin;
 	
-	AdminUser(){
-		this.userName = new String();
+	User(){
+		this.username = new String();
 		this.password = new String();
 		this.pin = new String();
 	}
 	
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	public String getPassword() {
 		return password;
@@ -32,7 +35,7 @@ public class AdminUser extends DataTransferStatusBean {
 
 	@Override
 	public String toString() {
-		return "AdminUser [userName=" + userName + ", password=" + password + ", pin=" + pin + "]";
+		return "AdminUser [userName=" + username + ", password=" + password + ", pin=" + pin + "]";
 	}
 	
 //	public String toString() {

@@ -21,5 +21,10 @@ public class ErrorBean {
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
 	}
+
+	@Override
+	public String toString() {
+		return "ErrorBean [errorCode=" + errorCode + ", errorMessage=" + errorMessage + "]";
+	}
 	
 }

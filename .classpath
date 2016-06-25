@@ -9,5 +9,7 @@
 	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/jaxrs-ri/api/javax.ws.rs-api-2.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/jetty-servlets-9.0.0.rc1.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/jetty-util-9.4.0.M0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/spring-context-4.3.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/spring-web-3.0.4.RELEASE.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

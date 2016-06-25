@@ -1,11 +1,14 @@
 package com.foody.rest.dto;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class DataTransferStatusBean {
 	String statusCode;
 	String statusMessage;
 	ErrorBean errorBean;
 	
-	DataTransferStatusBean(){
+	public DataTransferStatusBean(){
 		this.statusCode = new String();
 		this.statusMessage = new String();
 		this.errorBean = new ErrorBean();
@@ -29,4 +32,14 @@ public class DataTransferStatusBean {
 	public void setErrorBean(ErrorBean errorBean) {
 		this.errorBean = errorBean;
 	}
+
+	@Override
+	public String toString() {
+		return "DataTransferStatusBean [statusCode=" + statusCode + ", statusMessage=" + statusMessage + ", errorBean="
+				+ errorBean + ", getStatusCode()=" + getStatusCode() + ", getStatusMessage()=" + getStatusMessage()
+				+ ", getErrorBean()=" + getErrorBean() + "]";
+	}
+
+
+	
 }
