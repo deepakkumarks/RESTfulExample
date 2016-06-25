@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry including="**/*.java" kind="src" path="src/main/java"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry excluding="**/*.java" kind="src" path="src/main/resources"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/jersey-bundle-1.8.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/asm-3.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/jsr311-api-1.1.1.jar" sourcepath="C:/Users/Deepak/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-sources.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/jaxrs-ri/api/javax.ws.rs-api-2.0.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/jetty-servlets-9.0.0.rc1.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/jetty-util-9.4.0.M0.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/spring-context-4.3.0.RELEASE.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Data/Java/library/spring-web-3.0.4.RELEASE.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="D:/Deepak/Work/JavaWorkSpace/library/jaxrs-ri/api/javax.ws.rs-api-2.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Deepak/Work/JavaWorkSpace/library/asm-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Deepak/Work/JavaWorkSpace/library/jersey-bundle-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Deepak/Work/JavaWorkSpace/library/jetty-servlets-9.0.0.rc1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Deepak/Work/JavaWorkSpace/library/jetty-util-9.4.0.M0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Deepak/Work/JavaWorkSpace/library/jsr311-api-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Deepak/Work/JavaWorkSpace/library/spring-context-4.3.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Deepak/Work/JavaWorkSpace/library/spring-web-3.0.4.RELEASE.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

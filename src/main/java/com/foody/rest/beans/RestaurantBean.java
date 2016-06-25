@@ -10,6 +10,7 @@ public class RestaurantBean {
 	String restaurantPassword;
 	
 	public RestaurantBean(){
+		
 		String restaurantId = "";
 		String restaurantEmailId = "";
 		String restaurantPassword = "";

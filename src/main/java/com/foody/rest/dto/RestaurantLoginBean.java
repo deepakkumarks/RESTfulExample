@@ -7,6 +7,7 @@ public class RestaurantLoginBean {
 	
 	String restaurantEmailId;
 	String restaurantPassword;
+	
 	public String getRestaurantEmailId() {
 		return restaurantEmailId;
 	}

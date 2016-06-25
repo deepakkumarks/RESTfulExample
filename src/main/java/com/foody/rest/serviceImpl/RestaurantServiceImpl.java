@@ -41,21 +41,37 @@ public class RestaurantServiceImpl {
 		return restaurantBean;
 	}
 	
-	public DataTransferStatusBean createRestaurantLogin(RestaurantLoginBean restaurantLoginDetails){
-		DataTransferStatusBean statusBean = new DataTransferStatusBean();
-		//Already restaurant present
-		if(isValidRestaurantLoginDetail(restaurantLoginDetails)){
-			statusBean.setStatusCode(FoodyRestConstants.STATUS_CODE_FAILURE);
-			statusBean.getErrorBean().setErrorCode(FoodyRestConstants.ERR_CODE_RESTAURANT_ALREADY_PRESENT);
-			statusBean.getErrorBean().setErrorMessage(FoodyRestConstants.ERR_MSSG_RESTAURANT_ALREADY_PRESENT);
-		} else {
-			//create new restaurant
-			statusBean.setStatusCode(FoodyRestConstants.STATUS_CODE_CREATE_RESTAURANT_LOGIN);
-			statusBean.setStatusMessage(FoodyRestConstants.STATUS_MSSG_CREATE_RESTAURANT_LOGIN);
-			statusBean.getErrorBean().setErrorCode(FoodyRestConstants.ERROR_CODE_NO_ERROR);
-		}
-		return statusBean;
-	}
+//	public DataTransferStatusBean createRestaurantLogin(RestaurantLoginBean restaurantLoginDetails){
+//		DataTransferStatusBean statusBean = new DataTransferStatusBean();
+//		//Already restaurant present
+//		if(isValidRestaurantLoginDetail(restaurantLoginDetails)){
+//			statusBean.setStatusCode(FoodyRestConstants.STATUS_CODE_FAILURE);
+//			statusBean.getErrorBean().setErrorCode(FoodyRestConstants.ERR_CODE_RESTAURANT_ALREADY_PRESENT);
+//			statusBean.getErrorBean().setErrorMessage(FoodyRestConstants.ERR_MSSG_RESTAURANT_ALREADY_PRESENT);
+//		} else {
+//			//create new restaurant
+//			statusBean.setStatusCode(FoodyRestConstants.STATUS_CODE_CREATE_RESTAURANT_LOGIN);
+//			statusBean.setStatusMessage(FoodyRestConstants.STATUS_MSSG_CREATE_RESTAURANT_LOGIN);
+//			statusBean.getErrorBean().setErrorCode(FoodyRestConstants.ERROR_CODE_NO_ERROR);
+//		}
+//		return statusBean;
+//	}
+	
+//	public DataTransferStatusBean createRestaurantLogin(RestaurantLoginBean restaurantLoginDetails){
+//	DataTransferStatusBean statusBean = new DataTransferStatusBean();
+//	//Already restaurant present
+//	if(isValidRestaurantLoginDetail(restaurantLoginDetails)){
+//		statusBean.setStatusCode(FoodyRestConstants.STATUS_CODE_FAILURE);
+//		statusBean.getErrorBean().setErrorCode(FoodyRestConstants.ERR_CODE_RESTAURANT_ALREADY_PRESENT);
+//		statusBean.getErrorBean().setErrorMessage(FoodyRestConstants.ERR_MSSG_RESTAURANT_ALREADY_PRESENT);
+//	} else {
+//		//create new restaurant
+//		statusBean.setStatusCode(FoodyRestConstants.STATUS_CODE_CREATE_RESTAURANT_LOGIN);
+//		statusBean.setStatusMessage(FoodyRestConstants.STATUS_MSSG_CREATE_RESTAURANT_LOGIN);
+//		statusBean.getErrorBean().setErrorCode(FoodyRestConstants.ERROR_CODE_NO_ERROR);
+//	}
+//	return statusBean;
+//}
 	
 	private HashMap getRestaurantDetailsFromMap(){
 		restaurantDetailsMap.put("indi@gmail.com", new RestaurantBean("1", "indi@gmail.com", "indi"));

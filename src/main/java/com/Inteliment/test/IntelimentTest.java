@@ -8,6 +8,11 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
 
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 public class IntelimentTest {
 
 	public static void main(String[] args) {
@@ -47,7 +52,7 @@ public class IntelimentTest {
 	}
 	
 	@RequestMapping(value="search", method=RequestMethod.POST)
-	public @ResponseBody getSearchText(@ResponseBody SearchText searchText){
+	public @ResponseBody Counts getSearchText( SearchText searchText){
 		Counts searchCountDetails = new Counts();
 		if(searchText!=null){
 			String[] searchTexts = searchText.getTextToSearch();
